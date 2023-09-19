@@ -12,7 +12,7 @@ exposr:
     udp:
       discovery: kubernetes
   storage:
-    url: memory:// 
+    url: memory://
     pgsql: {}
   transport:
     maxConnections: 2
@@ -63,12 +63,14 @@ ingress:
   annotations: {}
   hosts: []
   tls: []
+  ingressClassName: null
 
 ingressAdmin:
   enabled: false
   annotations: {}
   hosts: []
   tls: []
+  ingressClassName: null
 
 resources: {}
 
